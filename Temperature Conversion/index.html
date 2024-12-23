@@ -10,6 +10,7 @@
     <div class="container">
     <h1>Convert Temperature:</h1>
     <h3>Choose one of the options:</h3>
+    <h4 id="current"></h4>
     <form>
         <div>
         <input type="button" value="°C ➡ °F" onclick="celsiusFahrenheit()" class="choice">
@@ -18,9 +19,8 @@
         <div id="temp">
         <label for="box" id="label"></label>
         <input type="text" id="box" placeholder="Enter Temperature">
-        <p id="Unit">°C</p>
+        <p id="Unit"></p>
         </div>
-        <br>
         <p id="output"></p>
         <input type="button" value="Submit!" id="submit" class="choice" onclick="resultant()">
         </div>

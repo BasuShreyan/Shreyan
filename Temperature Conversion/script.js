@@ -1,11 +1,11 @@
 //Variables
-onload=()=>{
-    let label=document.getElementById('label');
-    let box=document.getElementById('box');
-    let output=document.getElementById('output');
-    let unit=document.getElementById('Unit');
-    let result;
-    }
+
+let label=document.getElementById('label');
+let box=document.getElementById('box');
+let output=document.getElementById('output');
+let unit=document.getElementById('Unit');
+let current=document.getElementById('current');
+let result; 
 let k=1;
 determine();
 //Functions
@@ -37,12 +37,16 @@ function determine()
 {
     if(k==1)
     {
-    label.textContent="°C:";
+    label.textContent="Celsius:";
+    current.textContent="Celsius to Fahrenheit";
+    unit.textContent=`°C`;
     box.setAttribute('placeholder','Enter Celsius');
     }
     else
     {
-        label.textContent="°F:";
+        label.textContent="Fahrenheit:";
+        unit.textContent="°F";
+        current.textContent="Fahrenheit to Celsius";
         box.setAttribute('placeholder','Enter Fahrenheit');  
     }
 }
