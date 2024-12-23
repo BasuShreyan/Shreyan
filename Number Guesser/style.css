@@ -1,0 +1,39 @@
+*{
+	background-color: skyblue;
+}
+h1{
+	color: white;
+	font-family: Verdana;
+	font-size: 140%;
+}
+input{
+	border:1px solid;
+	border-radius:4px;
+	font-size:14pt;
+}
+#box{
+	background-color: whitesmoke;
+	width:60vw;
+	height: 5vh;
+	padding-left: 10px;
+}
+#btn{
+	background-color: lightgreen;
+	color:black;
+	border: 1px solid black;
+	width: 15vw;
+	height: 4vh;
+}
+
+#btn:hover{
+	background-color: yellow;
+}
+
+#btn:active{
+	background-color: lightgrey;
+}
+p{
+	font-family: Arial;
+	font-size: 14pt;
+	color: white;
+}
