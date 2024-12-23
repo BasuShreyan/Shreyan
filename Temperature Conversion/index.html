@@ -15,8 +15,11 @@
         <input type="button" value="°C ➡ °F" onclick="celsiusFahrenheit()" class="choice">
         <input type="button" value="°F ➡ °C" onclick="fahrenheitCelsius()" class="choice">
         <br>
+        <div id="temp">
         <label for="box" id="label"></label>
         <input type="text" id="box" placeholder="Enter Temperature">
+        <p id="Unit">°C</p>
+        </div>
         <br>
         <p id="output"></p>
         <input type="button" value="Submit!" id="submit" class="choice" onclick="resultant()">
