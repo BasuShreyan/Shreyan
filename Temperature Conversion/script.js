@@ -9,22 +9,30 @@ onload=()=>{
 
 //Functions
 function celsiusFahrenheit(){
-    label.textContent="Celsius";
+    label.textContent="°C:";
+    box.setAttribute('placeholder','Enter Celsius');
     k=1;
 }
 function fahrenheitCelsius(){
-    label.textContent="Fahrenheit";
+    label.textContent="°F:";
+    box.setAttribute('placeholder','Enter Fahrenheit');
     k=2;
 }
 function resultant(){
     let input=Number(box.value);
-    if(k==1){
-        result=Math.round((input*9)/5+32);
-        output.textContent=`${result}`;
+    if(isNaN(input)){
+        output.textContent=`Enter a vaild number`;
     }
     else{
-        result=Math.round((input-32)*5/9);
-        output.textContent=`${result}`;
+        if(k==1){
+            result=Math.round((input*9)/5+32);
+            output.textContent=`${input}°C➡${result}°F`;
+        }
+        else{
+            result=Math.round((input-32)*5/9);
+            output.textContent=`${input}°F➡${result}°C`;
+        }
     }
+    
 
 }
