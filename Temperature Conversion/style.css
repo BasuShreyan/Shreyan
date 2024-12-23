@@ -1,5 +1,7 @@
 *{
     font-family:Verdana, Geneva, Tahoma, sans-serif;
+    background-color: blanchedalmond;
+    color:black;
 }
 body{
     display:flex;
@@ -9,10 +11,38 @@ body{
     height:40vh;
 }
 form{
+    background-color:aliceblue;
     display:flex;
     justify-content: center;
     align-content: center;
+    margin-top: 10px;
 }
-h1{
+h1,h3{
+    background-color:aliceblue;
+    margin-bottom: 1px;
+    margin-top: 10px;
     text-align: center;
+}
+div{
+    background-color:aliceblue;
+}
+#container{
+    border:1px dotted royalblue;
+    width: 80vw;
+    height:30vh;
+    margin:auto;
+}
+.choice{
+    border:0.1px solid;
+    border-radius: 5px;
+    font-size: large;
+}
+div#button{
+    display: flex;
+}
+.choice:hover{
+    background-color:aqua;
+}
+.choice:active{
+    background-color: lightgrey;
 }

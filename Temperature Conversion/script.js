@@ -26,11 +26,11 @@ function resultant(){
     else{
         if(k==1){
             result=Math.round((input*9)/5+32);
-            output.textContent=`${input}°C➡${result}°F`;
+            output.textContent=`Fahrenheit:${result}°F`;
         }
         else{
             result=Math.round((input-32)*5/9);
-            output.textContent=`${input}°F➡${result}°C`;
+            output.textContent=`Celsius:${result}°C`;
         }
     }
     
