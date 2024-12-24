@@ -1,0 +1,38 @@
+*{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    background-color: ghostwhite;
+}
+h1,h3{
+    text-align: center;
+}
+form{
+    display: flex;
+    justify-content: center;
+}
+input[type="button"]{
+    float: right;
+    background-color: hsl(16, 100%, 50%);
+    color: azure;
+    font-size:10pt;
+    padding: 2px;
+    padding-left: 4px;
+    padding-right: 4px;
+}
+input[type="button"]:hover{
+    background-color: hsl(16, 100%, 60%);
+}
+input[type="button"]:active{
+    background-color: hsl(16, 100%, 70%);
+}
+input{
+    border-radius: 5px;
+}
+input[type="number"]{
+    width:25vw;
+    font-size: medium;
+}
+label{
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: large;
+}
